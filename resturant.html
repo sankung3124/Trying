@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankung's Restaurant</title>
+     <link rel="stylesheet" href="resturant.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to Jabbie's Restaurant</h1>
+        <p>Location:Brikama</p>
+    </header>
+    <section id="menue">
+        <h2>Our Menue</h2>
+        <div class="menue-item">
+            <h3>Burger</h3>
+            <p>price:D500</p>
+            <button onclick="addToCart('Burger' , 500)">Order Now</button>
+        </div>
+        <div class="menue-item">
+            <h3>Half Chicken</h3>
+            <p>price:D300</p>
+            <button onclick="addToCart('Half Chicken', 300)">Order Now</button>
+        </div>
+        <div class="menue-item">
+            <h3>Chicken Afra</h3>
+            <p>price:D350</p>
+            <button onclick="addToCart( 'Chicken Afra', 350)">Order Now</button>
+        </div>
+
+    </section>
+    <section id="cart">
+        <h2>Your Order</h2>
+        <ul id="cart-items"> </ul>
+        <p>Total:D <span id="total-price">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+
+    </section>
+    <section id="payment">
+         <h2>Payment Method</h2>
+         <button id="strip-btn">Pay with Strip</button>
+         <button id="paypal-btn">Pay with Paypal</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jabbie's Restaurant - Brikama</p>
+    </footer>
+    <script src="resturant.js"></script>
+</body>
+</html>
